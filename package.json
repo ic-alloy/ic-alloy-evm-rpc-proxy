@@ -1,0 +1,19 @@
+{
+  "name": "ic-alloy-evm-rpc-proxy",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240821.1",
+    "typescript": "^5.0.4",
+    "wrangler": "^3.80.2"
+  },
+  "dependencies": {
+    "@noble/hashes": "^1.5.0"
+  }
+}

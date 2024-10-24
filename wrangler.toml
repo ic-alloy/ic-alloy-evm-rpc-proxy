@@ -1,0 +1,15 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "ic-alloy-evm-rpc-proxy"
+main = "src/index.ts"
+compatibility_date = "2024-05-12"
+
+[[durable_objects.bindings]]
+name = "RPC_PROXY"
+class_name = "RpcProxy"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["RpcProxy"]
+
+[observability]
+enabled = true
